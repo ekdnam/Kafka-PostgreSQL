@@ -1,0 +1,23 @@
+create table Department(
+  department_name varchar (50) not null,
+  department_id int not null
+);
+
+create table employee_info(
+  employee_name varchar (50) not null,
+  employee_id int unique not null
+);
+
+insert into department(department_name, department_id)
+values
+  ('cybersecurity',1)
+  ('human resources', 2)
+  
+insert into employee_info(employee_name, employee_id)
+values
+  ('ABC', 123)
+  ('EFG', 234)
+  
+select * from department
+
+select * from employee_info
